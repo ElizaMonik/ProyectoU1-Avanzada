@@ -1,0 +1,12 @@
+<div class="correo-container">
+    <h1>PEPITOS DUROS</h1>
+    <p class="welcome">“bienvenido a la escuela {{escuela}}”</p>
+    <p>
+      Usted se ha inscrito a las <span class="highlight">{{fuerzasArmadas}}</span> y ha escogido el plan <span class="highlight">{{plan}}</span>. Hasta el momento tiene <span class="highlight">{{sesiones}}</span> sesiones del plan. Nivel: <span class="highlight">{{nivelBack}}</span>. El valor es: <span class="highlight">{{valorBackend}}</span>.
+    </p>
+    <p>En caso de aceptar la inscripción, pague al número de cuenta tal: <strong>{{numeroCuenta}}</strong></p>
+    <p>Subir el comprobante:</p>
+    <input type="file" (change)="onFileSelected($event)" class="file-input">
+    <img *ngIf="imagenUrl" [src]="imagenUrl" alt="Imagen subida" class="uploaded-image">
+  </div>
+  
